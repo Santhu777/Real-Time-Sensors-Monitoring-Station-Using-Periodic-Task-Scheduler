@@ -51,18 +51,6 @@ uart0_tx_string("\r\nLDR VALUE      :");
 	 }
  
 	 uart0_tx_integer(ldr_value);
-	 
-/* if(temp>30)
- {
- uart0_tx_string("\r\nhigh temperature" );
- IOCLR0=led;
-	 uart0_tx_string("\r\nhigh temperature" );
- }
- else
- {
- uart0_tx_string("\r\nnormal temperature" );
- IOSET0=led;
- }*/
 
  if(flame)
 	 uart0_tx_string("\r\nFLAME          :ON ");
